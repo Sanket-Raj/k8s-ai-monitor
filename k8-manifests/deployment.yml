@@ -22,5 +22,5 @@ spec:
         imagePullPolicy: Always
         resources:
           limits:
-            memory: "128Mi"
+            memory: "256Mi"
             cpu: "250m"
