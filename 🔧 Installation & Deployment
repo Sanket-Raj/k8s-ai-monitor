@@ -1,0 +1,3 @@
+kubectl apply -f k8-manifests/rbac.yml
+kubectl apply -f k8-manifests/deployment.yml
+kubectl logs -f -l app=k8s-ai-monitor

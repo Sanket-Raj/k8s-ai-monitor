@@ -1,0 +1,7 @@
+├── Agent/
+│   ├── analyzer.py       # Core logic: Connects to K8s API & processes streams
+│   └── Dockerfile        # Multi-stage build for the agent
+├── k8-manifests/
+│   ├── rbac.yml          # ServiceAccount & ClusterRole (Security)
+│   └── deployment.yml    # Deployment spec with resource limits
+└── .github/workflows/    # CI Pipeline (Build & Push to Docker Hub)
