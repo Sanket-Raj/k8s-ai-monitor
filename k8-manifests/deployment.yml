@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-ai-monitor
+  namespace: default
+  labels:
+    app: k8s-ai-monitor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-ai-monitor
+  template:
+    metadata:
+      labels:
+        app: k8s-ai-monitor
+    spec:
+      serviceAccountName: ai-monitor-sa  # Attaches the RBAC permissions
+      containers:
+      - name: analyzer-agent
+        image: your-dockerhub-username/k8s-ai-monitor:latest # REPLACE THIS
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
