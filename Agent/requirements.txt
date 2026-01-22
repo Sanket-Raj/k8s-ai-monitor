@@ -1,4 +1,4 @@
-kubernetes
+kubernetes>=29.0.0
 transformers
 torch
 accelerate
