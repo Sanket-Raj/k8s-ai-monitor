@@ -25,3 +25,8 @@ graph TD
         Logs --> Loki[Loki / Fluentd]
     end
     style Agent fill:#f9f,stroke:#333,stroke-width:2px
+
+    📖 Documentation:
+    Prerequisites
+    Deployment Guide
+    Future Roadmap
