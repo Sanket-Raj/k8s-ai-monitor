@@ -7,7 +7,8 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - [AI MONITOR] - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Heuristic "AI" Model to classify error severity
+# TODO: Replace heuristic with LLM call in v2
+# # Heuristic "AI" Model to classify error severity
 # In a real V2, this would call an LLM or local model
 def classify_error_severity(message):
     critical_keywords = ["CrashLoopBackOff", "OOMKilled", "Error", "Fatal"]
